@@ -1,0 +1,132 @@
+.brand {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 40px;
+    row-gap: 40px;
+    color: white;
+}
+.brand_item {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    border: 1px solid gray;
+}
+.brand_down {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.brand_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    margin: 20px;
+    text-align: center;
+}
+.brand_text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin: 40px;
+    text-align: center;
+}
+.brand_price {
+    font-family: Montserrat;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 79px;
+    letter-spacing: 0em;
+}
+.brand_link {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #7AD9CD;
+    cursor: pointer;
+}
+.brand_link::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: auto;
+    background-color: #7AD9CD;
+}
+
+.brand_work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.brand_work_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.brand_work_item.photo {
+    margin: 20px 0;
+    align-items: center;
+}
+.brand_work_item img {
+    width: 15%;
+}
+.brand_work_title{
+    width: 15%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.brand_work_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 15%;
+}
+
+
+
+@media(max-width: 900px) { 
+    .brand_item {
+        width: 100%;
+    }
+    .brand_text {
+        margin: 0 40px;
+    }
+    .brand_title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .brand_work_title {
+        font-size: 10px;
+    }
+    .brand_work_text {
+        font-size: 8px;
+    }
+}
